@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nguyễn Văn Thành Ngọc | Trang cá nhân</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+ font-family:Arial,sans-serif;
+ background:#0f172a;color:#f8fafc;
+ line-height:1.7;
+}
+header{
+ position:sticky;top:0;z-index:10;
+ background:#0f172aee;
+ padding:18px 8%;
+ display:flex;justify-content:space-between;
+ align-items:center;border-bottom:1px solid #334155;
+}
+.logo{font-weight:bold;color:#38bdf8;font-size:20px}
+nav a{color:#fff;text-decoration:none;margin-left:20px;font-size:14px}
+nav a:hover{color:#38bdf8}
+section{padding:85px 10%;scroll-margin-top:70px}
+.hero{
+ min-height:85vh;display:flex;flex-direction:column;
+ justify-content:center;align-items:center;text-align:center;
+ background:radial-gradient(circle at top,#1e3a5f,#0f172a 65%);
+}
+.hero h1{font-size:clamp(32px,6vw,55px);margin:15px 0}
+.hero h1 span{color:#38bdf8}
+.hero p{color:#cbd5e1;max-width:600px}
+.btn{
+ display:inline-block;margin:25px 8px;padding:12px 25px;
+ border-radius:8px;background:#0284c7;color:white;
+ text-decoration:none;transition:.3s;
+}
+.btn:hover{background:#38bdf8;transform:translateY(-3px)}
+h2{text-align:center;font-size:32px;margin-bottom:35px;color:#38bdf8}
+.about{text-align:center;max-width:800px;margin:auto;color:#cbd5e1}
+.skills,.projects{
+ display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+ gap:20px;
+}
+.card{
+ background:#1e293b;padding:25px;border-radius:14px;
+ border:1px solid #334155;transition:.3s;
+}
+.card:hover{transform:translateY(-5px);border-color:#38bdf8}
+.card h3{color:#38bdf8;margin-bottom:10px}
+.card p{color:#cbd5e1}
+.contact{text-align:center;color:#cbd5e1}
+.contact a{color:#38bdf8;text-decoration:none}
+footer{
+ text-align:center;padding:25px;
+ background:#020617;color:#94a3b8;
+}
+@media(max-width:600px){
+ header{flex-direction:column;gap:12px}
+ nav a{margin:0 7px;font-size:12px}
+ section{padding:65px 7%}
+}
+</style>
+</head>
+<body>
+
+<header>
+ <div class="logo">THÀNH NGỌC</div>
+ <nav>
+  <a href="#home">Trang chủ</a>
+  <a href="#about">Giới thiệu</a>
+  <a href="#skills">Kỹ năng</a>
+  <a href="#projects">Dự án</a>
+  <a href="#contact">Liên hệ</a>
+ </nav>
+</header>
+
+<section class="hero" id="home">
+ <p>CHÀO MỪNG BẠN ĐẾN VỚI WEBSITE CỦA MÌNH</p>
+ <h1>Xin chào, mình là <span>Nguyễn Văn Thành Ngọc</span></h1>
+ <p>Sinh viên / Người yêu công nghệ / Đam mê sáng tạo và khám phá những điều mới mẻ.</p>
+ <div>
+  <a class="btn" href="#projects">Xem dự án</a>
+  <a class="btn" href="#contact">Liên hệ với mình</a>
+ </div>
+</section>
+
+<section id="about">
+ <h2>Giới thiệu</h2>
+ <div class="about">
+  <p>
+   Xin chào! Mình là Nguyễn Văn Thành Ngọc.
+   Mình là người yêu thích công nghệ, luôn ham học hỏi
+   và mong muốn phát triển bản thân mỗi ngày.
+   Mình thích khám phá những kiến thức mới, sáng tạo
+   và xây dựng những sản phẩm có ích.
+  </p>
+  <p style="margin-top:15px">
+   Đây là website cá nhân của mình, nơi chia sẻ thông tin,
+   kỹ năng và những dự án mà mình thực hiện.
+  </p>
+ </div>
+</section>
+
+<section id="skills">
+ <h2>Kỹ năng của mình</h2>
+ <div class="skills">
+  <div class="card">
+   <h3>HTML & CSS</h3>
+   <p>Xây dựng và thiết kế giao diện website.</p>
+  </div>
+  <div class="card">
+   <h3>JavaScript</h3>
+   <p>Tìm hiểu lập trình và tạo tương tác cho website.</p>
+  </div>
+  <div class="card">
+   <h3>Tiếng Anh</h3>
+   <p>Trau dồi khả năng giao tiếp và học tập.</p>
+  </div>
+  <div class="card">
+   <h3>Làm việc nhóm</h3>
+   <p>Hợp tác, chia sẻ và cùng nhau phát triển.</p>
+  </div>
+ </div>
+</section>
+
+<section id="projects">
+ <h2>Dự án của mình</h2>
+ <div class="projects">
+  <div class="card">
+   <h3>Dự án số 1</h3>
+   <p>Website cá nhân giới thiệu bản thân.</p>
+  </div>
+  <div class="card">
+   <h3>Dự án số 2</h3>
+   <p>Dự án học tập và thực hành lập trình.</p>
+  </div>
+  <div class="card">
+   <h3>Dự án số 3</h3>
+   <p>Những ý tưởng sáng tạo trong tương lai.</p>
+  </div>
+ </div>
+</section>
+
+<section id="contact">
+ <h2>Liên hệ với mình</h2>
+ <div class="contact">
+  <p>Email: <a href="mailto:email@example.com">email@example.com</a></p>
+  <p>GitHub: <a href="https://github.com/">GitHub của mình</a></p>
+  <p>Facebook: <a href="#">Facebook của mình</a></p>
+ </div>
+</section>
+
+<footer>
+ © 2026 Nguyễn Văn Thành Ngọc. All rights reserved.
+</footer>
+
+</body>
+</html>
